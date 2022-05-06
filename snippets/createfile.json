@@ -1,0 +1,34 @@
+{
+  "create-hooks-file": {
+    "prefix": "create-hooks-file",
+    "body": [
+      "import React, { useState } from 'react';",
+      "import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';",
+      "import { DeprecatedNavigator, TYText, Utils } from 'tuya-panel-kit';",
+      "import String from '@i18n';",
+      "import Res from '@res';",
+      "import { useIoTUIValue } from '@models';",
+      " ",
+      "const { convertX: cx } = Utils.RatioUtils;",
+      "interface MainProps {",
+      "  navigator: DeprecatedNavigator;",
+      "}",
+      " ",
+      "const Pages: React.FC<MainProps> = () => {",
+      "  const fontColor = useIoTUIValue('fontColor');",
+      "  const background = useIoTUIValue('background');",
+      " ",
+      "  return <View style={styles.main} />;",
+      "};",
+      " ",
+      "const styles = StyleSheet.create({",
+      "  main: {",
+      "    flex: 1,",
+      "    alignItems: 'center',",
+      "  },",
+      "});",
+      "export default Pages;"
+    ],
+    "description": "创建RN文件"
+  }
+}
